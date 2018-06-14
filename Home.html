@@ -62,7 +62,28 @@
         <a href="LogInForm.html" class="right">Login</a>
         <a href="#" class="right">Contact</a>
     </div>
+    <div class="slideshow-container">
 
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="Resources/Astoria.jpg" style="width:100%">
+            <div class="text">
+                <h3>SHOP THE COLLECTION</h3>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="Resources/Astoria-2.jpg" style="width:100%">
+            <div class="text">
+                <h3>VISIT OUR STORE</h3>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:center;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
     <div class="row">
         <div class="main" style="background-color: white">
             <div class="Left-main">
@@ -164,6 +185,27 @@
 </body>
 <!--<script type="text/javascript" src="javascript.js"></script>-->
 <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
     window.onresize = function() {
         Resize()
     };
@@ -180,19 +222,18 @@
     var navbutton = document.getElementById("MenuText");
     var header = document.getElementById("header");
     var title_image = document.getElementById("title-image");
-    function DefaultLogo(){
-        if (document.documentElement.clientWidth > 975)
-        {
+
+    function DefaultLogo() {
+        if (document.documentElement.clientWidth > 975) {
             title_image.src = "Resources/logo_410x.png";
             title_image.style.width = "400px";
-        }
-        else
-        {
+        } else {
             title_image.src = "Resources/logo-small_112x.png";
             title_image.style.width = "60px";
             title_image.style.height = "30px";
         }
     }
+
     function Resize() {
         if (document.documentElement.clientWidth > 975) {
             navbar.style.width = "100%";
@@ -201,27 +242,21 @@
             title_image.src = "Resources/logo_410x.png";
             title_image.style.width = "400px";
             title_image.style.height = "40px";
-            if (document.documentElement.clientWidth < 1500) 
-            {
+            if (document.documentElement.clientWidth < 1500) {
                 small_logo.style.marginTop = "0px";
                 small_logo.style.display = "none";
-                if (window.pageYOffset >= sticky_pos) 
-                {
+                if (window.pageYOffset >= sticky_pos) {
                     navbar.style.overflow = "visible";
                     navbar.classList.add("sticky");
                 }
-            } 
-            else 
-            {
-                if (window.pageYOffset >= sticky_pos) 
-                {
+            } else {
+                if (window.pageYOffset >= sticky_pos) {
 
                     small_logo.style.marginTop = "25px";
                     small_logo.style.display = "block";
                 }
             }
-        } 
-        else {
+        } else {
             navbar.style.width = "0";
             navbar.style.overflow = "hidden";
             navbar.classList.remove("sticky");
@@ -231,7 +266,7 @@
             navbutton.style.top = "50px";
             navbutton.style.position = "fixed";
             navbutton.style.zIndex = "7";
-            navbutton.style.fontSize = "25px"; 
+            navbutton.style.fontSize = "25px";
             title_image.src = "Resources/logo-small_112x.png";
             title_image.style.width = "60px";
             title_image.style.height = "30px";
@@ -249,15 +284,14 @@
     }
 
     function myFunction() {
-        if (document.documentElement.clientWidth > 975)
-        {
+        if (document.documentElement.clientWidth > 975) {
             navbutton.style.fontSize = "0px";
             if (window.pageYOffset >= sticky_pos) {
                 small_logo.style.marginTop = "25px";
                 small_logo.style.display = "block";
                 navbar.style.overflow = "visible";
                 navbar.classList.add("sticky");
-                
+
             } else {
                 small_logo.style.marginTop = "0px";
                 small_logo.style.display = "none";
@@ -268,8 +302,8 @@
 
         }
         if (document.documentElement.clientWidth < 1400) {
-                small_logo.style.marginTop = "0px";
-                small_logo.style.display = "none";
+            small_logo.style.marginTop = "0px";
+            small_logo.style.display = "none";
         }
         if (document.documentElement.clientWidth <= 975) {
             navbutton.style.fontSize = "25px";
@@ -280,10 +314,8 @@
                 header.style.position = "fixed";
                 header.style.width = "100%";
                 header.style.zIndex = "6";
-                
-            }
-            else
-            {
+
+            } else {
                 navbutton.style.position = "realative";
                 navbutton.style.zIndex = "7";
                 navbutton.style.top = "50px";
@@ -298,7 +330,6 @@
     function closeNav() {
         document.getElementById("navbar").style.width = "0%";
     }
-
 </script>
 
 </html>
