@@ -31,10 +31,9 @@
                 <button class="dropbtn">OUTDOORS</button>
             </a>
             <div class="dropdown-content">
-                <a href="#">Outdoor Funiture</a>
-                <a href="#">Planters &amp; Jardinieres</a>
-                <a href="#">Lanterns</a>
-                <a href="#">Outdoor Pillows</a>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
             </div>
         </div>
         <div class="dropdown">
@@ -42,10 +41,9 @@
                 <button class="dropbtn">FUNITURE</button>
             </a>
             <div class="dropdown-content">
-                <a href="Seating.html">Seating</a>
-                <a href="Tables.html">Tables</a>
-                <a href="#">Limited Edition (Vintage)</a>
-                <a href="#">Rattan Collection</a>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
             </div>
         </div>
         <div class="dropdown">
@@ -53,10 +51,9 @@
                 <button class="dropbtn">DECOR</button>
             </a>
             <div class="dropdown-content">
-                <a href="#">Accessories</a>
-                <a href="#">Bath</a>
-                <a href="#">Art &amp; Mirror</a>
-                <a href="#">Rugs</a>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
             </div>
         </div>
         <div class="topnav-centered">
@@ -90,7 +87,7 @@
     <div class="row">
         <div class="main" style="background-color: white">
             <div class="Left-main">
-                <img src="Resources/seat.png" alt="Seating" onclick="location.href='Seating.html'">
+                <img src="Resources/seat.png" alt="Seating">
                 <div class="image-text">
                     <h1>SEATING</h1>
                 </div>
@@ -207,7 +204,7 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 8000); // Change image every 2 seconds
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
     window.onresize = function() {
         Resize()
@@ -227,7 +224,7 @@
     var title_image = document.getElementById("title-image");
 
     function DefaultLogo() {
-        if (document.documentElement.clientWidth > 1030) {
+        if (document.documentElement.clientWidth > 975) {
             title_image.src = "Resources/logo_410x.png";
             title_image.style.width = "400px";
         } else {
@@ -238,15 +235,14 @@
     }
 
     function Resize() {
-        if (document.documentElement.clientWidth > 1030) {
+        if (document.documentElement.clientWidth > 975) {
             navbar.style.width = "100%";
-            navbar.style.height = "auto";
             header.style.position = "relative";
             navbutton.style.fontSize = "0px";
             title_image.src = "Resources/logo_410x.png";
             title_image.style.width = "400px";
             title_image.style.height = "40px";
-            if (document.documentElement.clientWidth < 1600) {
+            if (document.documentElement.clientWidth < 1500) {
                 small_logo.style.marginTop = "0px";
                 small_logo.style.display = "none";
                 if (window.pageYOffset >= sticky_pos) {
@@ -260,10 +256,8 @@
                     small_logo.style.display = "block";
                 }
             }
-        } 
-        else if (document.documentElement.clientWidth <= 1030) 
-        {
-            
+        } else {
+            navbar.style.width = "0";
             navbar.style.overflow = "hidden";
             navbar.classList.remove("sticky");
             header.style.position = "fixed";
@@ -271,14 +265,11 @@
             header.style.zIndex = "6";
             navbutton.style.top = "50px";
             navbutton.style.position = "fixed";
-            navbutton.style.zIndex = "9";
+            navbutton.style.zIndex = "7";
             navbutton.style.fontSize = "25px";
             title_image.src = "Resources/logo-small_112x.png";
             title_image.style.width = "60px";
             title_image.style.height = "30px";
-            navbar.style.transition = "0s";
-            navbar.style.width = "0";
-            navbar.style.height = "100%";
             /*
             text-align: center;
             width: 3.5%;
@@ -293,7 +284,7 @@
     }
 
     function myFunction() {
-        if (document.documentElement.clientWidth > 1030) {
+        if (document.documentElement.clientWidth > 975) {
             navbutton.style.fontSize = "0px";
             if (window.pageYOffset >= sticky_pos) {
                 small_logo.style.marginTop = "25px";
@@ -310,11 +301,11 @@
             }
 
         }
-        if (document.documentElement.clientWidth < 1600) {
+        if (document.documentElement.clientWidth < 1400) {
             small_logo.style.marginTop = "0px";
             small_logo.style.display = "none";
         }
-        if (document.documentElement.clientWidth <= 1030) {
+        if (document.documentElement.clientWidth <= 975) {
             navbutton.style.fontSize = "25px";
             if (window.pageYOffset >= sticky_pos) {
                 navbutton.style.position = "fixed";
@@ -333,12 +324,10 @@
     }
 
     function openNav() {
-        navbar.style.transition = "0.5s";
         document.getElementById("navbar").style.width = "100%";
     }
 
     function closeNav() {
-        navbar.style.transition = "0.5s";
         document.getElementById("navbar").style.width = "0%";
     }
 </script>
