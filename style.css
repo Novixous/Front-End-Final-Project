@@ -337,6 +337,7 @@ body {
     text-align: center;
 }
 
+
 .Right-main {
     flex: 50%;
     padding-left: 0px;
@@ -451,7 +452,29 @@ body {
     transition: all 1.2s;
     transform: scale(1);
 }
+.aboutus {
+    background-color: white;
+    text-align: left;
+}
 
+.aboutus_text {
+   margin: 5%;
+    font-family: Baskerville;
+    font-size: 1.07em;
+    line-height: 2;
+    font-weight: 300;
+    
+}
+
+.upper{
+    background-color: #eeeff0;
+}
+
+.aboutus img:hover {
+    transform: scale(1.0);
+    transition: all 1.2s;
+    cursor: default;
+}
 .main-container {
     width: 100%;
     background-color: white;
