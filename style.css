@@ -210,7 +210,7 @@ body {
     text-decoration: none;
     display: block;
     text-align: left;
-    font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 /* Add a grey background color to dropdown links on hover */
@@ -264,8 +264,9 @@ body {
     position: relative;
 
 }
+
 .Funiture-text {
-    font-family: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
     font-weight: 400;
     line-height: 1.4;
     font-size: 1.6em;
@@ -274,7 +275,8 @@ body {
 #Funiture-main {
     border: 1px solid white;
     border-collapse: collapse;
-}    
+}
+
 .image-text {
     /*width: 300px;
     height: 100px;*/
@@ -287,8 +289,9 @@ body {
     transform: translate(-50%, -50%);
     margin-top: 0px;
     margin-left: 0px;
-    font-size: 15px;
-    /*background-color: rgba(0, 0, 0, 0.66);*/
+    font-size: 0.7em;
+    background-color: rgba(0, 0, 0, 0.66);
+    text-transform: uppercase;
     color: #f9f9f9;
 }
 
@@ -316,18 +319,20 @@ body {
 }
 
 .Tables {
-    flex:30%;
+    flex: 30%;
     padding-left: 0px;
     text-align: center;
     position: relative;
     background-color: #FFFFFF;
     border: 1px solid #000000;
 }
+
 .Tables h1 {
     color: #FFFFFF;
-    background-color: rgba(0, 0, 0, 0.59);
     font-size: 1.2em;
+    text-transform: uppercase;
 }
+
 .Left-main h1 {
     text-align: center;
 }
@@ -397,8 +402,8 @@ body {
     transform: translate(-50%, -50%);
     margin-top: 0px;
     margin-left: 0px;
-    font-size: 15px;
-    /*background-color: rgba(0, 0, 0, 0.66);*/
+    font-size: 0.7em;
+    background-color: rgba(0, 0, 0, 0.66);
     color: #f9f9f9;
 }
 
@@ -413,8 +418,8 @@ body {
     transform: translate(-50%, -50%);
     margin-top: 0px;
     margin-left: 0px;
-    font-size: 15px;
-    /*background-color: rgba(0, 0, 0, 0.66);*/
+    font-size: 0.7em;
+    background-color: rgba(0, 0, 0, 0.66);
     color: #f9f9f9;
 }
 
@@ -429,18 +434,95 @@ body {
     padding: 20px;
 
 }
-.row div{
+
+.row div {
     overflow: hidden;
 }
+
 .row img:hover {
     transform: scale(1.1);
     transition: all 1.2s;
+    cursor: pointer;
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) 
     */
 }
+
 .row img {
     transition: all 1.2s;
     transform: scale(1);
+}
+
+.main-container {
+    width: 100%;
+    background-color: white;
+}
+
+.item-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Left-Img-Pin {
+    flex: 40%;
+}
+
+.Pin-img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-container {
+    flex: 60%;
+}
+
+.item-container .item {
+    display: inline-block;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'gurmukhi_mnregular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.item-container .item p {
+    line-height: 1.6;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.item-container .item img {
+    width: 100%;
+}
+
+.independent-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.independent-item .item {
+    flex: 18.8%;
+    margin: 0.6%;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'gurmukhi_mnregular', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.independent-item .item p {
+    line-height: 1.6;
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.independent-item .item img {
+    width: 100%;
+
 }
 
 /* Footer */
@@ -620,6 +702,7 @@ body {
     }
     .navbar div {
         position: sticky;
+        -webkit-position: sticky;
     }
     .navbar a {
         padding: 8px 8px 8px 32px;
@@ -651,7 +734,7 @@ body {
     .image-text,
     .Inside-left-image-text,
     .inner-image-text {
-        font-size: 10px;
+        font-size: 0.6em;
     }
     .navbar {
         width: 100%;
@@ -665,13 +748,13 @@ body {
     .dropdown {
         width: 100%;
         text-align: left;
-        position: inherit;
+        position: sticky;
     }
     .dropbtn {
         margin: 0 auto;
         text-align: left;
         width: 100%;
-        position: inherit;
+        position: sticky;
     }
     .Left-main {
         flex: 100%;
@@ -682,21 +765,40 @@ body {
     .image-text,
     .Inside-left-image-text,
     .inner-image-text {
-        font-size: 10px;
+        font-size: 0.6em;
     }
-
-
+    .Left-Img-Pin {
+        flex: 100%;
+    }
+    .Pin-img {
+        width: 100%;
+        height: 100%;
+    }
+    .item-container {
+        flex: 100%;
+    }
+    .item-container .item {
+        display: inline-block;
+        width: 48%;
+        margin: 0.5%;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .independent-item .item {
+        flex: 48%;
+        margin: 0.5%;
+    }
 }
 
 @media screen and (max-width: 1100px) {
     .Tables {
-    flex:50%;
-    padding-left: 0px;
-    text-align: center;
-    position: relative;
-    background-color: #FFFFFF;
-    border: 1px solid #000000;
-}
+        flex: 50%;
+        padding-left: 0px;
+        text-align: center;
+        position: relative;
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+    }
     .footer-sub-section-1 {
         flex: 0%;
     }
@@ -747,6 +849,87 @@ body {
     }
 }
 
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar a {
+        float: none;
+        width: 100%;
+        text-align: left;
+
+    }
+    .dropdown {
+        width: 100%;
+        text-align: left;
+        position: sticky;
+    }
+    .dropbtn {
+        margin: 0 auto;
+        text-align: left;
+        width: 100%;
+        position: sticky;
+    }
+    .Left-main {
+        flex: 100%;
+    }
+    .Right-main {
+        flex: 100%;
+    }
+    .image-text,
+    .Inside-left-image-text,
+    .inner-image-text {
+        font-size: 0.6em;
+    }
+    .footer-sub-section-1,
+    .footer-sub-section-2,
+    .footer-sub-section-3,
+    .footer-sub-section-4,
+    .footer-sub-section-5,
+    .footer-sub-section-6 {
+        flex: 100%;
+        text-align: left;
+        padding-left: 10%;
+        font-size: 15px;
+
+    }
+
+
+    .footer-sub-section-3 ul,
+    .footer-sub-section-4 ul,
+    .footer-sub-section-5 ul {
+        text-align: left;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .footer-sub-section-3 a,
+    .footer-sub-section-4 a,
+    .footer-sub-section-5 a {
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+    }
+
+    .footer-sub-section-3 li,
+    .footer-sub-section-4 li,
+    .footer-sub-section-5 li {
+        display: block
+    }
+
+    .social-icons {
+        font-size: 25px;
+        word-spacing: 20px;
+        color: white;
+    }
+
+    .social-icons a {
+        color: gray;
+        font-size: 20px;
+    }
+
+}
+
 @media screen and (max-width: 500px) {
     .navbar {
         width: 100%;
@@ -760,13 +943,13 @@ body {
     .dropdown {
         width: 100%;
         text-align: left;
-        position: inherit;
+        position: sticky;
     }
     .dropbtn {
         margin: 0 auto;
         text-align: left;
         width: 100%;
-        position: inherit;
+        position: sticky;
     }
     .Left-main {
         flex: 100%;
@@ -777,7 +960,7 @@ body {
     .image-text,
     .Inside-left-image-text,
     .inner-image-text {
-        font-size: 10px;
+        font-size: 0.6em;
     }
     .footer-sub-section-1,
     .footer-sub-section-2,
@@ -830,117 +1013,123 @@ body {
 
 /*Log in form css*/
 
-    #SIcontainer {
-        position: relative;
-        display: block;
-        padding: 15px;
-        width: 30%;
-        height: 280px;
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+#SIcontainer {
+    position: relative;
+    display: block;
+    padding: 15px;
+    width: 30%;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
-    #SIcontainer form {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+#SIcontainer form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-    #SIcontainer input[type=text], #SIcontainer input[type=password], #SIcontainer input[type=submit]{
-        display: block;
-        margin: 0 auto;
-        width: 430px;
-        height: 30px;
-        padding: 10px;
-        border: 0.5px transparent black;
-    }
-    
-    #SIcontainer input[type=password], #SIcontainer input[type=submit]{
-        margin-top: 10px;
-    }
+#SIcontainer input[type=text],
+#SIcontainer input[type=password],
+#SIcontainer input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    width: 430px;
+    height: 30px;
+    padding: 10px;
+    border: 0.5px transparent black;
+}
 
-    #SIcontainer input[type=submit]{
-        font-family: inherit;
-        font-size: 14px;
-        background-color: rgba(0,0,0,0.9);
-        color: lightgoldenrodyellow;
-        padding-top: 5px;
-        padding-bottom: 18px;
-    }
+#SIcontainer input[type=password],
+#SIcontainer input[type=submit] {
+    margin-top: 10px;
+}
 
-    #SIcontainer h2{
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-    }
+#SIcontainer input[type=submit] {
+    font-family: inherit;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgoldenrodyellow;
+    padding-top: 5px;
+    padding-bottom: 18px;
+}
 
-    #SIcontainer #signuplink{
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 200px;
-        color: black;
-        text-decoration: none;
-    }
+#SIcontainer h2 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#SIcontainer #signuplink {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    color: black;
+    text-decoration: none;
+}
 
 /*Sign up form css*/
 
-    #sign_up_container {
-        position: relative;
-        display: block;
-        padding: 15px;
-        width: 30%;
-        height: 280px;
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+#sign_up_container {
+    position: relative;
+    display: block;
+    padding: 15px;
+    width: 30%;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
-     #sign_up_container form {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-         margin-top: 30px;
-    }
+#sign_up_container form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+}
 
-    #sign_up_container input[type=text], #sign_up_container input[type=password], #sign_up_container input[type=submit]{
-        display: block;
-        margin: 0 auto;
-        width: 430px;
-        height: 30px;
-        padding: 10px;
-        border: 0.5px transparent black;
-    }
+#sign_up_container input[type=text],
+#sign_up_container input[type=password],
+#sign_up_container input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    width: 430px;
+    height: 30px;
+    padding: 10px;
+    border: 0.5px transparent black;
+}
 
-    #sign_up_container input[type=password], #sign_up_container input[type=submit]{
-        margin-top: 10px;
-    }
+#sign_up_container input[type=password],
+#sign_up_container input[type=submit] {
+    margin-top: 10px;
+}
 
-    #sign_up_container input[type=submit]{
-        font-family: inherit;
-        font-size: 14px;
-        background-color: rgba(0,0,0,0.9);
-        color: lightgoldenrodyellow;
-        padding-top: 5px;
-        padding-bottom: 18px;
-    }
+#sign_up_container input[type=submit] {
+    font-family: inherit;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgoldenrodyellow;
+    padding-top: 5px;
+    padding-bottom: 18px;
+}
 
-    #sign_up_container #lastname {
-        margin-top: 10px;
-    }
+#sign_up_container #lastname {
+    margin-top: 10px;
+}
 
-    #sign_up_container #username {
-        margin-top: 10px;
-    }
+#sign_up_container #username {
+    margin-top: 10px;
+}
 
-    #sign_up_container h2{
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-    }
+#sign_up_container h2 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
 
 
 .mySlides {
@@ -958,7 +1147,8 @@ img {
     position: relative;
     margin: auto;
 }
-.slideshow-container img{
+
+.slideshow-container img {
     max-height: 701px;
     min-height: 250px;
 }
@@ -1032,4 +1222,3 @@ img {
     .text {
         font-size: 11px
     }
-
