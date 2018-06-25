@@ -452,21 +452,22 @@ body {
     transition: all 1.2s;
     transform: scale(1);
 }
+
 .aboutus {
     background-color: white;
     text-align: left;
 }
 
 .aboutus_text {
-   margin: 5%;
+    margin: 5%;
     font-family: Baskerville;
     font-size: 1.07em;
     line-height: 2;
     font-weight: 300;
-    
+
 }
 
-.upper{
+.upper {
     background-color: #eeeff0;
 }
 
@@ -475,6 +476,7 @@ body {
     transition: all 1.2s;
     cursor: default;
 }
+
 .main-container {
     width: 100%;
     background-color: white;
@@ -1036,217 +1038,302 @@ body {
 
 /*Log in form css*/
 
-/*Log in form css*/
+#SIcontainer {
+    position: relative;
+    display: block;
+    padding: 15px;
+    width: 50%;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
-    #SIcontainer {
-        position: relative;
-        display: block;
-        padding: 15px;
-        width: 50%;
-        height: 280px;
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+#SIcontainer form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-    #SIcontainer form {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+#SIcontainer input[type=text],
+#SIcontainer input[type=password],
+#SIcontainer input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    width: 430px;
+    height: 30px;
+    padding: 10px;
+    border: 0.5px transparent black;
+}
 
-    #SIcontainer input[type=text], 
-    #SIcontainer input[type=password], 
-    #SIcontainer input[type=submit]{
-        display: block;
-        margin: 0 auto;
-        width: 430px;
-        height: 30px;
-        padding: 10px;
-        border: 0.5px transparent black;
-    }
-    
-    #SIcontainer input[type=password], 
-    #SIcontainer input[type=submit]{
-        margin-top: 10px;
-    }
+#SIcontainer input[type=password],
+#SIcontainer input[type=submit] {
+    margin-top: 10px;
+}
 
-    #SIcontainer input[type=submit]{
-        font-family: inherit;
-        font-size: 14px;
-        background-color: rgba(0,0,0,0.9);
-        color: lightgoldenrodyellow;
-        padding-top: 5px;
-        padding-bottom: 18px;
-    }
+#SIcontainer input[type=submit] {
+    font-family: inherit;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgoldenrodyellow;
+    padding-top: 5px;
+    padding-bottom: 18px;
+}
 
-    #SIcontainer h2{
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-    }
+#SIcontainer h2 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
 
-    #SIcontainer #signuplink{
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 200px;
-        color: black;
-        text-decoration: none;
-    }
+#SIcontainer #signuplink {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    color: black;
+    text-decoration: none;
+}
 
 /*Sign up form css*/
 
-    #sign_up_container {
-        position: relative;
-        display: block;
-        padding: 15px;
-        width: 30%;
-        height: 280px;
-        margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        
-    }
+#sign_up_container {
+    position: relative;
+    display: block;
+    padding: 15px;
+    width: 50%;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
-     #sign_up_container form {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 30px;
-    }
+}
 
-    #sign_up_container input[type=text], 
-    #sign_up_container input[type=password], 
-    #sign_up_container input[type=submit]{
-        display: block;
-        margin: 0 auto;
-        width: 430px;
-        height: 30px;
-        padding: 10px;
-        border: 0.5px transparent black;
-    }
+#sign_up_container form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+}
 
-    #sign_up_container input[type=password], 
-    #sign_up_container input[type=submit]{
-        margin-top: 10px;
-    }
+#sign_up_container input[type=text],
+#sign_up_container input[type=password],
+#sign_up_container input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    width: 430px;
+    height: 30px;
+    padding: 10px;
+    border: 0.5px transparent black;
+}
 
-    #sign_up_container input[type=submit]{
-        font-family: inherit;
-        font-size: 14px;
-        background-color: rgba(0,0,0,0.9);
-        color: lightgoldenrodyellow;
-        padding-top: 5px;
-        padding-bottom: 18px;
-    }
+#sign_up_container input[type=password],
+#sign_up_container input[type=submit] {
+    margin-top: 10px;
+}
 
-    #sign_up_container #lastname {
-        margin-top: 10px;
-    }
+#sign_up_container input[type=submit] {
+    font-family: inherit;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgoldenrodyellow;
+    padding-top: 5px;
+    padding-bottom: 18px;
+}
 
-    #sign_up_container #username {
-        margin-top: 10px;
-    }
+#sign_up_container #lastname {
+    margin-top: 10px;
+}
 
-    #sign_up_container h2{
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-    }
+#sign_up_container #username {
+    margin-top: 10px;
+}
+
+#sign_up_container h2 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
 
 /*Responsive for Log In Form*/
-@media screen and (max-width: 500px){
-    
+
+@media screen and (max-width: 500px) {
+
     #SIcontainer {
         width: 90%;
     }
-    
-    #SIcontainer form{
+
+    #SIcontainer form {
         width: 90%;
     }
-    
-    #SIcontainer #signuplink{
+
+    #SIcontainer #signuplink {
         margin-top: 150px;
         font-size: 1em;
     }
-    
-    #SIcontainer h2{
+
+    #SIcontainer h2 {
         display: block;
         text-align: center;
         margin-top: 30px;
         font-size: 15px;
     }
-    
-    #SIcontainer input[type=text], 
-    #SIcontainer input[type=password], 
-    #SIcontainer input[type=submit]{
+
+    #SIcontainer input[type=text],
+    #SIcontainer input[type=password],
+    #SIcontainer input[type=submit] {
         width: 200px;
         height: 15px;
     }
 }
 
-@media screen and (max-width: 700px){
-    
-    #SIcontainer{
+@media screen and (max-width: 700px) {
+
+    #SIcontainer {
         width: 90%;
     }
-    
-    #SIcontainer form{
+
+    #SIcontainer form {
         width: 60%;
     }
-    
-    #SIcontainer #signuplink{
+
+    #SIcontainer #signuplink {
         margin-top: 150px;
         font-size: 1em;
     }
-    
-    #SIcontainer h2{
+
+    #SIcontainer h2 {
         display: block;
         text-align: center;
         margin-top: 45px;
         font-size: 1.2em;
     }
-    
-    #SIcontainer input[type=text], 
-    #SIcontainer input[type=password], 
-    #SIcontainer input[type=submit]{
+
+    #SIcontainer input[type=text],
+    #SIcontainer input[type=password],
+    #SIcontainer input[type=submit] {
         width: 100%;
         height: 15px;
     }
 }
 
-@media screen and (max-width: 1047px){
-     #SIcontainer{
+@media screen and (max-width: 1047px) {
+    #SIcontainer {
         width: 60%;
     }
-    
-    #SIcontainer form{
+
+    #SIcontainer form {
         width: 60%;
     }
-    
-    #SIcontainer #signuplink{
+
+    #SIcontainer #signuplink {
         margin-top: 150px;
         font-size: 1em;
     }
-    
-    #SIcontainer h2{
+
+    #SIcontainer h2 {
         display: block;
         text-align: center;
         margin-top: 45px;
         font-size: 1.2em;
     }
-    
-    #SIcontainer input[type=text], 
-    #SIcontainer input[type=password], 
-    #SIcontainer input[type=submit]{
+
+    #SIcontainer input[type=text],
+    #SIcontainer input[type=password],
+    #SIcontainer input[type=submit] {
         width: 100%;
         height: 15px;
     }
 }
 
+/*Responsive for SIGN UP FORM*/
+
+@media screen and (max-width: 100px){
+    #sign_up_container h2{
+        display: block;
+        text-align: center;
+        
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #sign_up_container {
+        width: 90%;
+    }
+
+    #sign_up_container form {
+        width: 90%;
+    }
+
+    #sign_up_container h2 {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    #sign_up_container input[type=text],
+    #sign_up_container input[type=password],
+    #sign_up_container input[type=submit] {
+        width: 200px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #sign_up_container {
+        width: 90%;
+    }
+
+    #sign_up_container form {
+        width: 60%;
+    }
+
+    #sign_up_container h2 {
+        display: block;
+        text-align: center;
+        margin-top: 45px;
+        font-size: 1.1em;
+    }
+
+    #sign_up_container input[type=text],
+    #sign_up_container input[type=password],
+    #sign_up_container input[type=submit] {
+        width: 100%;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 1047px) {
+    #sign_up_container {
+        width: 60%;
+    }
+
+    #sign_up_container form {
+        width: 60%;
+    }
+
+    #sign_up_container h2 {
+        display: block;
+        text-align: center;
+        margin-top: 45px;
+        font-size: 1.1em;
+    }
+
+    #sign_up_container input[type=text],
+    #sign_up_container input[type=password],
+    #sign_up_container input[type=submit] {
+        width: 100%;
+        height: 15px;
+    }
+}
+
+/*Add for fun*/
 
 .mySlides {
     display: none;
