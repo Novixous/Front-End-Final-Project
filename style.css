@@ -251,6 +251,7 @@ body {
 
 /* Main column */
 
+
 .main {
     /*flex: 70%;*/
     /* IE10 */
@@ -264,7 +265,9 @@ body {
     position: relative;
 
 }
-
+.login-main {
+    padding: 160px 0;
+}
 .Funiture-text {
     font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
     font-weight: 400;
@@ -686,6 +689,7 @@ body {
 
 .product-upper {
     display: flex;
+    flex:100%;
     flex-wrap: wrap;
     font-size: 14px;
     line-height: 1.6;
@@ -1522,6 +1526,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 30px;
+    width: 90%;
 }
 
 #sign_up_container input[type=text],
@@ -1529,7 +1534,7 @@ body {
 #sign_up_container input[type=submit] {
     display: block;
     margin: 0 auto;
-    width: 430px;
+    width: 90%;
     height: 30px;
     padding: 10px;
     border: 0.5px transparent black;
@@ -1714,7 +1719,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1047px) {
+@media screen and (max-width: 1040px) {
     #sign_up_container {
         width: 60%;
     }
