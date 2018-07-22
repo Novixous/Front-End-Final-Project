@@ -980,7 +980,7 @@ body {
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 
-@media screen and (max-width: 1047px) {
+@media screen and (max-width: 1030px) {
     #MenuText {
         font-size: 30px;
         color: aliceblue;
@@ -1526,7 +1526,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 30px;
-    width: 90%;
+    width: 100%;
 }
 
 #sign_up_container input[type=text],
@@ -1534,7 +1534,7 @@ body {
 #sign_up_container input[type=submit] {
     display: block;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     height: 30px;
     padding: 10px;
     border: 0.5px transparent black;
