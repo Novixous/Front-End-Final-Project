@@ -143,26 +143,26 @@ html {
 
 .under_block {
     width: 100%;
-    display: block;
+    display: flex;
     margin-bottom: 0;
     padding-bottom: 0;
-    height: 1300px;
+    height: auto;
 }
 
 #Right3 {
-    width: 50%;
-    display: inline-block;
+    overflow: hidden;
+    display: flex;
+    flex: 50%;
 }
 
 #Right3 img {
-    width: 100%;
-    height: 1300px;
+    width: 1000px;
+    height: 100%;
 }
 
 #Left3 {
-    width: 50%;
-    display: inline-block;
-    float: left;
+    display: flex;
+    flex:50%;
 }
 
 .visit_under_text {
@@ -249,7 +249,8 @@ html {
 .middle_block:after,
 .under_block:after {
     content: '';
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     clear: both;
 }
 
@@ -257,17 +258,17 @@ html {
 
 @media only screen and (max-width: 1030px) {
     .under_block {
-        height: 1450px;
+        
     }
 
     #Right3 {
         width: 50%;
-        display: inline-block;
+        display: flex;
     }
 
     #Right3 img {
-        width: 100%;
-        height: 1450px;
+        width: 1000px;
+        height: 100%;
     }
 }
 
@@ -318,11 +319,10 @@ html {
     }
 
     .under_block {
-        height: 1492px;
+        display: block;
     }
 
     #Left3 {
-        display: block;
         width: 100%;
     }
 
@@ -332,7 +332,6 @@ html {
 
     #Right3 img {
         width: 100%;
-        height: 500px;
     }
 
 }
